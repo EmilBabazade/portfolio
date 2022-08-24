@@ -7,4 +7,12 @@
   <h4 class="col-8">
     {{content}}
   </h4>
+  <div class="d-flex flex-column" *ngIf="url || source">
+    <a target="_blank" href="{{url}}" class="icon">
+      <fa-icon [icon]="faGlobe" *ngIf="url"></fa-icon>
+    </a>
+    <a target="_blank" href="{{source}}" class="icon">
+      <fa-icon [icon]="faGithub" *ngIf="source"></fa-icon>
+    </a>
+  </div>
 </div>

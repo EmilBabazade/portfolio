@@ -1,4 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { IContentBox } from '../IContentBox';
 
 @Component({
@@ -13,8 +17,14 @@ export class ContentBoxComponent implements OnInit {
   startDate?: string;
   endDate?: string;
   content: string = '';
+  source?: string;
+  url?: string;
 
-  constructor() { }
+  faGithub = faGithub;
+  faGlobe = faGlobe;
+
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  }
 
   ngOnInit(): void {
     this.name = this.model.name;
@@ -22,6 +32,8 @@ export class ContentBoxComponent implements OnInit {
     this.startDate = this.model.startDate;
     this.endDate = this.model.endDate;
     this.content = this.model.content;
+    this.source = this.model.source;
+    this.url = this.model.url;
   }
 
 }

@@ -8,6 +8,8 @@ import { SideProjsComponent } from './side-projs/side-projs.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContentBoxComponent } from './content-box/content-box.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { ContentBoxComponent } from './content-box/content-box.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
