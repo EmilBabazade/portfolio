@@ -12,4 +12,13 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  downloadFile() {
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', '../../assets/cv.pdf');
+    link.setAttribute('download', `cv.pdf`);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 }
