@@ -14,15 +14,19 @@
 
 @media only screen and (max-width: 900px) {
   .content-box {
-    flex-direction: column;
+    /* flex-direction: column; */
     margin: 20px;
   }
 
-  .icons {
-    flex-direction: row;
+  .body {
+    display: none;
   }
 
-  .icons a {
+  /* .icons {
+    flex-direction: row;
+  } */
+
+  /* .icons a {
     margin: 10px;
-  }
+  } */
 }

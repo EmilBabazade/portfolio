@@ -1,13 +1,13 @@
-<div class="content-box d-flex justify-content-start">
+<div class="content-box d-flex justify-content-between">
   <div class="d-flex flex-column col-4">
     <h1>{{name}}</h1>
     <p *ngIf="startDate && endDate">{{startDate}} - {{endDate}}</p>
     <h3>Skills Used: {{skills}}</h3>
   </div>
-  <h4 class="col-8">
+  <h4 class="col-7 body">
     {{content}}
   </h4>
-  <div class="d-flex icons" *ngIf="url || source">
+  <div class="d-flex icons col-1" *ngIf="url || source">
     <a target="_blank" href="{{url}}" class="icon">
       <fa-icon [icon]="faGlobe" *ngIf="url"></fa-icon>
     </a>
