@@ -2,3 +2,24 @@
   width: 400px;
   clip-path: circle();
 }
+
+.d-flex {
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+  .d-flex {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .profile-pic {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-pic {
+    width: 200px;
+  }
+}
