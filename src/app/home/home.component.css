@@ -2,13 +2,3 @@
   width: 400px;
   clip-path: circle();
 }
-
-.download-btn {
-  background-color: purple;
-  border: 0.5px;
-  color: white;
-}
-
-.download-btn:hover {
-  color: black;
-}
