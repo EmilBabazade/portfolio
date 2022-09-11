@@ -1,4 +1,4 @@
-<div class="content-box d-flex flex-row justify-content-start">
+<div class="content-box d-flex justify-content-start">
   <div class="d-flex flex-column col-4">
     <h1>{{name}}</h1>
     <p *ngIf="startDate && endDate">{{startDate}} - {{endDate}}</p>
@@ -7,7 +7,7 @@
   <h4 class="col-8">
     {{content}}
   </h4>
-  <div class="d-flex flex-column" *ngIf="url || source">
+  <div class="d-flex icons" *ngIf="url || source">
     <a target="_blank" href="{{url}}" class="icon">
       <fa-icon [icon]="faGlobe" *ngIf="url"></fa-icon>
     </a>

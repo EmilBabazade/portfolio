@@ -8,3 +8,21 @@
   margin: 106px;
 }
 
+.icons {
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+  .content-box {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .icons {
+    flex-direction: row;
+  }
+
+  .icons a {
+    margin: 10px;
+  }
+}
