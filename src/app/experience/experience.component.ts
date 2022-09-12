@@ -18,8 +18,8 @@ export class ExperienceComponent implements OnInit {
         or something.`,
       name: 'UNISER',
       skills: '.NET, Angular, JQuery, TSQL, GIT',
-      endDate: '31/07/2021',
-      startDate: '31/08/2022'
+      endDate: '31/08/2022',
+      startDate: '31/07/2021'
     },
     {
       content: `Writing APIs with .Net core, writing front-end with Angular, and managing SqlServer database. I worked on
@@ -28,8 +28,8 @@ export class ExperienceComponent implements OnInit {
       here: http://www.cargo.az`,
       name: 'EK EXPRESS',
       skills: '.NET, Angular, JQuery, TSQL, GIT',
-      endDate: '01/06/2020',
-      startDate: '30/06/2021'
+      endDate: '30/06/2021',
+      startDate: '01/06/2020'
     },
     {
       content: `General back-end and database development with ABAP ( a unique language to SAP). Most of my work was
@@ -37,8 +37,8 @@ export class ExperienceComponent implements OnInit {
       front-end ( there is also some SQL and OpenSql used in order to recieve data from tables )`,
       name: 'ACCENTURE LATVIA',
       skills: 'ABAP, OpenSQL, GIT, Agile, Scrum',
-      endDate: '14/04/2019',
-      startDate: '14/04/2020'
+      endDate: '14/04/2020',
+      startDate: '14/04/2019'
     },
   ];
 
