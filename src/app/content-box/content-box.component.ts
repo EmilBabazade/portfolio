@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faFileArrowDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { IContentBox } from '../IContentBox';
 
 @Component({
@@ -13,15 +13,18 @@ import { IContentBox } from '../IContentBox';
 export class ContentBoxComponent implements OnInit {
   @Input() model!: IContentBox;
   name: string = '';
-  skills: string = '';
+  skills?: string;
   startDate?: string;
   endDate?: string;
   content: string = '';
   source?: string;
   url?: string;
+  fileUrl?: string;
+  onlyDate?: string;
 
   faGithub = faGithub;
   faGlobe = faGlobe;
+  faFileArrowDown = faFileArrowDown;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
   }
@@ -34,6 +37,18 @@ export class ContentBoxComponent implements OnInit {
     this.content = this.model.content;
     this.source = this.model.source;
     this.url = this.model.url;
+    this.fileUrl = this.model.fileUrl;
+    this.onlyDate = this.model.onlyDate;
   }
 
+  downloadFile() {
+    if(!this.fileUrl) return;
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', `../../assets/${this.fileUrl}`);
+    link.setAttribute('download', this.fileUrl);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 }

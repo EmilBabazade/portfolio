@@ -4,8 +4,9 @@
 
 .content-box {
   padding: 40px;
-  background: purple;
+  background: #3F51B5;
   margin: 106px;
+  color: white;
 }
 
 .icons {

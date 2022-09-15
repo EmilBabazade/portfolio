@@ -2,17 +2,22 @@
   <div class="d-flex flex-column col-4">
     <h1>{{name}}</h1>
     <p *ngIf="startDate && endDate">{{startDate}} - {{endDate}}</p>
-    <h3>Skills Used: {{skills}}</h3>
+    <p *ngIf="startDate && !endDate">{{startDate}} - Hal Hazıradək</p>
+    <p *ngIf="onlyDate">{{onlyDate}}</p>
+    <h3 *ngIf="skills">Vəzifələr: {{skills}}</h3>
   </div>
   <h4 class="col-7 body">
     {{content}}
   </h4>
-  <div class="d-flex icons col-1" *ngIf="url || source">
+  <div class="d-flex icons col-1" *ngIf="url || source || fileUrl">
     <a target="_blank" href="{{url}}" class="icon">
       <fa-icon [icon]="faGlobe" *ngIf="url"></fa-icon>
     </a>
     <a target="_blank" href="{{source}}" class="icon">
       <fa-icon [icon]="faGithub" *ngIf="source"></fa-icon>
+    </a>
+    <a class="icon pointer" (click)="downloadFile()">
+      <fa-icon [icon]="faFileArrowDown" *ngIf="fileUrl"></fa-icon>
     </a>
   </div>
 </div>

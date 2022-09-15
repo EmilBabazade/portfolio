@@ -4,7 +4,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .download-btn {
-  background-color: purple;
+  background-color: #3F51B5;
   border: 0.5px;
   color: white;
   text-transform: uppercase;
@@ -12,4 +12,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .download-btn:hover {
   color: black;
+}
+
+.pointer {
+  cursor: pointer;
 }

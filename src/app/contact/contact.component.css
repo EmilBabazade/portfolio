@@ -4,8 +4,12 @@
 }
 
 .contacts {
-  background: purple;
+  background: #3F51B5;
   padding: 50px;
+}
+
+.contacts * {
+  color: white;
 }
 
 .link {
