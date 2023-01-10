@@ -9,7 +9,7 @@ import { IContentBox } from '../IContentBox';
 export class ExperienceComponent implements OnInit {
   data: IContentBox[] = [
     {
-      name: 'UGE-LANCER PTE.LTD Şirkətinin Azərbaycan respublikasındakı Nümayəndəliyi',
+      name: 'UGE-LANCER PTE.LTD Şirkətinin Azərbaycan Respublikasındakı Nümayəndəliyi',
       skills: 'Maliyyə meneceri',
       startDate: '2022',
       content: 'Nümayəndəliyin maliyyə-təsərrüfat fəaliyyətinə aid bütün işlər.'
