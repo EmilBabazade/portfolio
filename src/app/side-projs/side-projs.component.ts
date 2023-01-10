@@ -9,18 +9,6 @@ import { IContentBox } from '../IContentBox';
 export class SideProjsComponent implements OnInit {
   data: IContentBox[] = [
     {
-      content: `Beynəlxalq maliyyə hesabatları kursu, sertifikat`,
-      name: 'Arthur Anderson Peşəkar Təhsil Xidmətləri',
-      onlyDate: '1999',
-      fileUrl: 'arthur_anderssen.pdf'
-    },
-    {
-      content: 'Bey ACCA, Beynəlxalq Maliyyə hesabatları Diplomu ((DipİFR Russian N 1816631).',
-      name: 'ACCA',
-      onlyDate: '2013',
-      fileUrl: 'DipIFR.pdf'
-    },
-    {
       content: `Ali təhsil, fərqlənmə diplomu.`,
       name: 'Azərbaycan Dövlət Neft Akademiyası',
       startDate: '1991',
@@ -28,22 +16,34 @@ export class SideProjsComponent implements OnInit {
       fileUrl: 'Diplom.pdf'
     },
     {
+      content: `Beynəlxalq maliyyə hesabatları kursu, sertifikat`,
+      name: 'Arthur Anderson Peşəkar Təhsil Xidmətləri',
+      onlyDate: '1999',
+      fileUrl: 'arthur_anderssen.pdf'
+    },
+    {
       content: `BMUS üzrə müxtəlif sertifikatlar.`,
-      name: 'ABTM Təlimləri',
+      name: 'Azərbaycan Bank Tədris Mərkəzi',
       onlyDate: '2001',
       fileUrl: 'diplom_bank.pdf'
+    },
+    {
+      content: 'Beynəlxalq Maliyyə hesabatları Diplomu ((DipİFR Russian N 1816631).',
+      name: 'ACCA',
+      onlyDate: '2013',
+      fileUrl: 'DipIFR.pdf'
+    },
+    {
+      content: 'Beynəlxalq Maliyyə Standartları üzrə PEŞƏKAR MÜHASİB SERTİFİKATI PMS N 0000079.',
+      name: 'Dövlət İmtahan Mərkəzi',
+      onlyDate: '2022',
+      fileUrl: 'Sertifikat.pdf'
     },
     {
       content: 'Azərbaycan Professional Maliyyə Menecerləri Assosiasiyası İctimai Birliyinin üzvü.',
       name: 'APFM',
       fileUrl: 'APFM.pdf',
       onlyDate: '2022'
-    },
-    {
-      content: 'Beynəlxalq maliyyə standartları PEŞƏKAR MÜHASİB SERTİFİKATI PMS N 0000079.',
-      name: 'Dövlət İmtahan Mərkəzi',
-      onlyDate: '2022',
-      fileUrl: 'Sertifikat.pdf'
     },
   ];
 
