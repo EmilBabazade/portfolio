@@ -15,8 +15,8 @@ export class HomeComponent implements OnInit {
   downloadFile() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/cv.pdf');
-    link.setAttribute('download', `cv.pdf`);
+    link.setAttribute('href', '../../assets/cv.docx');
+    link.setAttribute('download', `cv.docx`);
     document.body.appendChild(link);
     link.click();
     link.remove();

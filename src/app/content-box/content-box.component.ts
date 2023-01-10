@@ -16,11 +16,12 @@ export class ContentBoxComponent implements OnInit {
   skills?: string;
   startDate?: string;
   endDate?: string;
-  content: string = '';
+  content?: string = '';
   source?: string;
   url?: string;
   fileUrl?: string;
   onlyDate?: string;
+  list?: string[];
 
   faGithub = faGithub;
   faGlobe = faGlobe;
@@ -39,6 +40,7 @@ export class ContentBoxComponent implements OnInit {
     this.url = this.model.url;
     this.fileUrl = this.model.fileUrl;
     this.onlyDate = this.model.onlyDate;
+    this.list = this.model.list;
   }
 
   downloadFile() {

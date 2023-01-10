@@ -4,8 +4,9 @@ export interface IContentBox {
   startDate?: string;
   endDate?: string;
   onlyDate?: string;
-  content: string;
+  content?: string;
   source?: string;
   url?: string;
   fileUrl?: string;
+  list?: string[];
 }
