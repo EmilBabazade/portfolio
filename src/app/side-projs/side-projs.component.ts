@@ -28,8 +28,8 @@ export class SideProjsComponent implements OnInit {
       fileUrl: 'Diplom.pdf'
     },
     {
-      content: `Azerbaijan Bank Training Centre.`,
-      name: 'Qeyri-Maddi vəsaitlər sertifikati',
+      content: `ABTC Təlimləri sertifikatı.`,
+      name: 'ABTC Təlimləri',
       onlyDate: '2001',
       fileUrl: 'diplom_bank.pdf'
     },
@@ -41,7 +41,7 @@ export class SideProjsComponent implements OnInit {
     },
     {
       content: 'Maliyyə Hesabatlarının Beynalxaq Standartları üzrə peşəkar mühasib sertifikatı.',
-      name: 'Azərbaycan Respublikasinin Dövlət İmtahan Mərkəzi',
+      name: 'Peşəkar muhasib sertifikatı',
       onlyDate: '2022',
       fileUrl: 'Sertifikat.pdf'
     },
