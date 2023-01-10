@@ -41,7 +41,7 @@ export class SideProjsComponent implements OnInit {
     },
     {
       content: 'Maliyyə Hesabatlarının Beynalxaq Standartları üzrə peşəkar mühasib sertifikatı.',
-      name: 'Peşəkar muhasib sertifikatı',
+      name: 'Peşəkar Mühasib Sertifikatı',
       onlyDate: '2022',
       fileUrl: 'Sertifikat.pdf'
     },
