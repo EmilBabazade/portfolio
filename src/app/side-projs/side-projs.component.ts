@@ -9,7 +9,7 @@ import { IContentBox } from '../IContentBox';
 export class SideProjsComponent implements OnInit {
   data: IContentBox[] = [
     {
-      content: `Beynəlxalq maliyyə hesabatları kursu sertifikatı`,
+      content: `Beynəlxalq maliyyə hesabatları kursu, sertifikat`,
       name: 'Arthur Anderson Peşəkar Təhsil Xidmətləri',
       onlyDate: '1999',
       fileUrl: 'arthur_anderssen.pdf'
