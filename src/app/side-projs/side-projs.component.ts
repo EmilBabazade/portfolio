@@ -9,39 +9,39 @@ import { IContentBox } from '../IContentBox';
 export class SideProjsComponent implements OnInit {
   data: IContentBox[] = [
     {
-      content: `Arthur Anderson qlobal mühasibatlıq sertifikatı.`,
-      name: 'Arthur Anderson peşəkar təhsil xidmətləri',
+      content: `ACCA, Beynəlxalq Maliyyə hesabatları Diplomu ((DipİFR Russian N 1816631).`,
+      name: 'Arthur Anderson Peşəkar Təhsil Xidmətləri',
       onlyDate: '1999',
       fileUrl: 'arthur_anderssen.pdf'
     },
     {
-      content: 'ACCA maliyyə diplomu.',
+      content: 'Diploma in International Reporting in russian.',
       name: 'ACCA',
       onlyDate: '2013',
       fileUrl: 'DipIFR.pdf'
     },
     {
-      content: `Bakalavr diplomu.`,
+      content: `Ali təhsil diplomu.`,
       name: 'Azərbaycan Dövlət Neft Akademiyası',
       startDate: '1991',
       endDate: '1996',
       fileUrl: 'Diplom.pdf'
     },
     {
-      content: `ABTC Təlimləri sertifikatı.`,
-      name: 'ABTC Təlimləri',
+      content: `ABTM Təlim sertifikatı.`,
+      name: 'ABTM Təlimləri',
       onlyDate: '2001',
       fileUrl: 'diplom_bank.pdf'
     },
     {
-      content: 'Azərbaycan Professional Maliyyə Menecerləri Assosiasiyası İctimai Birliyinin 2022-ci il üzrə üzvü.',
+      content: 'Azərbaycan Professional Maliyyə Menecerləri Assosiasiyası İctimai Birliyinin üzvü.',
       name: 'APFM',
       fileUrl: 'APFM.pdf',
       onlyDate: '2022'
     },
     {
-      content: 'Maliyyə Hesabatlarının Beynalxaq Standartları üzrə peşəkar mühasib sertifikatı.',
-      name: 'Peşəkar Mühasib Sertifikatı',
+      content: 'PEŞƏKAR MÜHASİB SERTİFİKATI PMS N 0000079.',
+      name: 'Dövlət İmtahan Mərkəzi',
       onlyDate: '2022',
       fileUrl: 'Sertifikat.pdf'
     },

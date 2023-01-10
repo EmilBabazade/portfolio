@@ -9,7 +9,12 @@
   <h4 class="col-7 body">
     {{content || ''}}
     <ul *ngIf="list">
-      <li *ngFor="let item of list">{{item}}</li>
+      <li *ngFor="let item of list">
+        {{item.content}}
+        <ul *ngIf="item.children">
+          <li *ngFor="let child of item.children">{{child}}</li>
+        </ul>
+      </li>
     </ul>
   </h4>
   <div class="d-flex icons col-1" *ngIf="url || source || fileUrl">

@@ -3,7 +3,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileArrowDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { IContentBox } from '../IContentBox';
+import { IContentBox, IListItemWithChild } from '../IContentBox';
 
 @Component({
   selector: 'app-content-box',
@@ -21,7 +21,7 @@ export class ContentBoxComponent implements OnInit {
   url?: string;
   fileUrl?: string;
   onlyDate?: string;
-  list?: string[];
+  list?: IListItemWithChild[];
 
   faGithub = faGithub;
   faGlobe = faGlobe;

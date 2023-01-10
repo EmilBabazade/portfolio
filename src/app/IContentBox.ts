@@ -8,5 +8,10 @@ export interface IContentBox {
   source?: string;
   url?: string;
   fileUrl?: string;
-  list?: string[];
+  list?: IListItemWithChild[];
+}
+
+export interface IListItemWithChild {
+  content: string,
+  children?: string[]
 }
