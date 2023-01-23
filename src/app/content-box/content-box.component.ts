@@ -3,6 +3,8 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileArrowDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { AllTextService } from '../all-text.service';
+import { ContentBoxText } from '../allText';
 import { IContentBox, IListItemWithChild } from '../IContentBox';
 
 @Component({
@@ -27,10 +29,15 @@ export class ContentBoxComponent implements OnInit {
   faGlobe = faGlobe;
   faFileArrowDown = faFileArrowDown;
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  text?: ContentBoxText;
+
+  constructor(iconRegistry: MatIconRegistry,
+    sanitizer: DomSanitizer,
+    private allTextService: AllTextService) {
   }
 
   ngOnInit(): void {
+    this.text = this.allTextService.getAllText('rus').contentBox;
     this.name = this.model.name;
     this.skills = this.model.skills;
     this.startDate = this.model.startDate;

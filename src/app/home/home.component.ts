@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AllTextService } from '../all-text.service';
+import { HomeText } from '../allText';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  text?: HomeText;
 
-  constructor() { }
+  constructor(private allTextService: AllTextService) { }
 
   ngOnInit(): void {
+    this.text = this.allTextService.getAllText('rus').home;
   }
 
   downloadFile() {
