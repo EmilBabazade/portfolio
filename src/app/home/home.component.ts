@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
     link.setAttribute('href', '../../assets/cv.docx');
-    link.setAttribute('download', `cv.docx`);
+    link.setAttribute('download', `cv.pdf`);
     document.body.appendChild(link);
     link.click();
     link.remove();
