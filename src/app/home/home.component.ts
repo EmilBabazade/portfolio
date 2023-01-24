@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { AllTextService } from '../all-text.service';
 import { HomeText } from '../allText';
 
@@ -10,10 +11,12 @@ import { HomeText } from '../allText';
 export class HomeComponent implements OnInit {
   text?: HomeText;
 
-  constructor(private allTextService: AllTextService) { }
+  constructor(private allTextService: AllTextService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.text = this.allTextService.getAllText('rus').home;
+    this.allTextService.lang$.subscribe(l => {
+      this.text = this.allTextService.getAllText(l).home;
+    });
   }
 
   downloadFile() {

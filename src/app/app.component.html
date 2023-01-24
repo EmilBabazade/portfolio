@@ -12,3 +12,15 @@
     <app-contact></app-contact>
   </mat-tab>
 </mat-tab-group>
+
+<footer class="text-center text-lg-start bg-light text-muted mt-3 mb-0 p-0">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <span class="mx-4">© 2023</span>
+    <select class="" aria-label=".form-select-sm example">
+      <option *ngIf="isAz" value="az" selected (click)="selectLang('az')">Azərbərbaycanca</option>
+      <option *ngIf="!isAz" value="az" (click)="selectLang('az')">Azərbərbaycanca</option>
+      <option *ngIf="isRus" value="rus" selected (click)="selectLang('rus')">Русский</option>
+      <option *ngIf="!isRus" value="rus" (click)="selectLang('rus')">Русский</option>
+    </select>
+  </div>
+</footer>

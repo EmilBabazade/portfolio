@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileArrowDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { AllTextService } from '../all-text.service';
@@ -33,11 +34,14 @@ export class ContentBoxComponent implements OnInit {
 
   constructor(iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer,
-    private allTextService: AllTextService) {
+    private allTextService: AllTextService,
+    private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.text = this.allTextService.getAllText('rus').contentBox;
+    this.allTextService.lang$.subscribe(l => {
+      this.text = this.allTextService.getAllText(l).contentBox;
+    });
     this.name = this.model.name;
     this.skills = this.model.skills;
     this.startDate = this.model.startDate;

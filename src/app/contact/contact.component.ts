@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { AllTextService } from '../all-text.service';
 import { ContactText } from '../allText';
 
@@ -10,10 +11,11 @@ import { ContactText } from '../allText';
 export class ContactComponent implements OnInit {
   text?: ContactText;
 
-  constructor(private allTextService: AllTextService) { }
+  constructor(private allTextService: AllTextService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.text = this.allTextService.getAllText('rus').contact;
+    this.allTextService.lang$.subscribe(l => {
+      this.text = this.allTextService.getAllText(l).contact;
+    });
   }
-
 }

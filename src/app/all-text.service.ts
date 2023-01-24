@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { AllText } from './allText';
 
 const textAZ: AllText = {
@@ -125,8 +126,14 @@ const textRUS: AllText = {
   providedIn: 'root'
 })
 export class AllTextService {
+  private languageSource = new BehaviorSubject('rus');
+  lang$: Observable<string> = this.languageSource.asObservable();
 
   constructor() { }
+
+  setLang(lang: string) {
+    this.languageSource.next(lang);
+  }
 
   getAllText(lang?: string): AllText {
     if(lang === 'rus') return textRUS;
