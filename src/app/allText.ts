@@ -10,6 +10,7 @@ export interface AppText {
   tab2: string,
   tab3: string,
   tab4: string,
+  tab5: string,
 }
 
 export interface ContentBoxText {

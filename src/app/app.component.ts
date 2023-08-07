@@ -10,8 +10,8 @@ import { AppText } from './allText';
 })
 export class AppComponent implements OnInit {
   text?: AppText;
-  isAz = false;
-  isRus = true;
+  isAz = true;
+  isRus = false;
 
   constructor(private allTextService: AllTextService,
     private route: ActivatedRoute,

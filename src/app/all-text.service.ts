@@ -8,6 +8,7 @@ const textAZ: AllText = {
     tab2: "Təcrübə",
     tab3: "Təhsil və Sertifikatlar",
     tab4: "Əlaqə",
+    tab5: "FAQ"
   },
   contentBox: {
     untilNow: "Hal Hazıradək",
@@ -63,6 +64,7 @@ const textRUS: AllText = {
     tab2: "Опыт работы",
     tab3: "Учеба и сертификаты",
     tab4: "Контакты",
+    tab5: "FAQ"
   },
   contentBox: {
     untilNow: "До настоящего времени",
@@ -126,7 +128,7 @@ const textRUS: AllText = {
   providedIn: 'root'
 })
 export class AllTextService {
-  private languageSource = new BehaviorSubject('rus');
+  private languageSource = new BehaviorSubject('az');
   lang$: Observable<string> = this.languageSource.asObservable();
 
   constructor() { }

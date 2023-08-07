@@ -10,6 +10,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ContentBoxComponent } from './content-box/content-box.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
+import { FaqComponent } from './faq/faq.component';
+import {MatTreeModule} from '@angular/material/tree';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -19,13 +22,16 @@ import { RouterModule } from '@angular/router';
     SideProjsComponent,
     ContactComponent,
     ExperienceComponent,
-    ContentBoxComponent
+    ContentBoxComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
     FontAwesomeModule,
+    MatTreeModule,
+    MatIconModule,
     RouterModule.forRoot([]),
   ],
   providers: [],
